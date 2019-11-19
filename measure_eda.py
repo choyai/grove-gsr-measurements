@@ -47,7 +47,7 @@ while True:
                 ",{0:.5f},".format(adc_data)
             # Save to CSV file and exit after 20s or 2000 entries
             if counter >= max_data:
-                f = open("log_file.csv", "a")
+                f = open("log_file_super_hot_2.csv", "a")
                 f.write(data)
                 f.close()
                 data = ''
@@ -58,7 +58,7 @@ while True:
         else:
             pass
     except KeyboardInterrupt:
-        f = open("log_file.csv", "a")
+        f = open("log_file_super_hot_2.csv", "a")
         f.write(data)
         f.close()
         data = ''
